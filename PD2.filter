@@ -630,7 +630,7 @@ ItemDisplay[MAG !ID rin]://%BLUE%%NAME%%WHITE%[%ILVL%]
 ItemDisplay[MAG rin ID]:%NAME%%WHITE%[%ILVL%]%WHITE%{%YELLOW%Blood Ring:%ORANGE%Sol %WHITE%+ %RED%P Ruby %WHITE%+ %BLUE%Jewel%NL%%YELLOW%Caster Ring:%ORANGE%Amn %WHITE%+ %PURPLE%P Amethyst %WHITE%+ %BLUE%Jewel}
 //
 //Blue Jewels for crafting
-ItemDisplay[MAG !ID jew]://%BLUE%***%NL%%BLUE%o Jewel o%NL%%BLUE%***%MAP-97%%PX-62%
+ItemDisplay[MAG !ID jew]:%BLUE%***%NL%%BLUE%o %ORANE%Jewel o%NL%%BLUE%***%MAP-97%%PX-62%
 //
 //Magic Diadems
 ItemDisplay[MAG ci3 !ETH !ID]://%BLUE%* %NAME% *%MAP-97%%PX-62%
