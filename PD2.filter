@@ -196,17 +196,17 @@ ItemDisplay[dcso]:%RED%*%YELLOW%*%GREEN%*%BLUE%*%NL%%RED%o %PURPLE%Prime Evil So
 //║ Corruption Items ║
 //╚══════════════════╝
 ItemDisplay[wss]:%RED%*%NL%%RED%o %PURPLE%Orb of %ORANGE%Shattered Dreams%RED% o%NL%%RED%*%MAP-62%%PX-20%
-ItemDisplay[lbox]:%RED%*%YELLOW%*%GREEN%*%BLUE%*%NL%%RED%oooooooooo %PURPLE%Larzuk's Puzzle Box %RED%oooooooooo%NL%%RED%*%YELLOW%*%GREEN%*%BLUE%*%DOT-62%%BORDER-4B%
+ItemDisplay[lbox]:%RED%*%YELLOW%*%GREEN%*%BLUE%*%NL%%RED%oooooooooo %PURPLE%Larzuk's Puzzle Box %RED%oooooooooo%NL%%RED%*%YELLOW%*%GREEN%*%BLUE%*%DOT-62%%BORDER-4B%{%WHITE%Two-Handed Weapon = 4 max%NL%One-Handed Weapon = 2 max%NL%Helmet, Chest, Shield = 2 max%NL%%TAN%Note%WHITE%: Use it to %TAN%Socket %WHITE%an Item}
 //╔══════════════╗
 //║ Map Upgrades ║
 //╚══════════════╝
-ItemDisplay[rera]:%PURPLE% %NAME%%DOT-80% // Reroll Rare Map (Horadrim Orb)
-ItemDisplay[imra]:%PURPLE% %NAME%%DOT-80% // Imbue Rare Map (Zakarum Orb)
-ItemDisplay[upma]:%PURPLE% %NAME%%DOT-80% // Upgrade Magic Map to Rare Map (Angelic Orb)
-ItemDisplay[imma]:%PURPLE% %NAME%%DOT-80% // Imbue Magic Map (Arcane Orb)
-ItemDisplay[scou]:%PURPLE% %NAME%%DOT-80% // Purge Map (Removes Mods and Reverts back to a White Map) (Orb of Destruction)
-ItemDisplay[upmp]:%PURPLE% %NAME%%DOT-80% // Combine maps into higher tiers (Cartographer's Orb)
-ItemDisplay[scrb]:%PURPLE% %NAME%%DOT-80% // turns t3 maps into dungeons (Horadrim Scarab)
+ItemDisplay[scrb]: %BORDER-A9%%NAME% %ORANGE%*{%RED%Group Dungeon%NL%%TAN%Note%WHITE%: Cube it with %GRAY%[%ORANGE%T3%GRAY%] %WHITE%Map to Make:}
+ItemDisplay[imra]: %NAME% %ORANGE%*{%WHITE%Map + %GOLD%Orb %WHITE%+ %BLUE%Jewel %WHITE%+ %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Imbue White Map to %YELLOW%Rare%WHITE%:}
+ItemDisplay[rera]: %NAME% %ORANGE%*{%YELLOW%Map %WHITE%+ %GOLD%Orb %WHITE%+ Perf Gem + %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Reroll %YELLOW%Rare %WHITE%Map:}
+ItemDisplay[upma]: %NAME% %ORANGE%*{%BLUE%Map %WHITE%+ %GOLD%Orb %WHITE%+ Perf %GRAY%O %WHITE%+ %ORANGE%Rune>9%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic %WHITE%Map to %YELLOW%Rare%WHITE%:}
+ItemDisplay[imma]: %NAME% %ORANGE%*{%WHITE%Map + %GOLD%Orb %WHITE%+ %BLUE%Jewel %NL%%TAN%Note%WHITE%: Imbue White Map to %BLUE%Magic%WHITE%:}
+ItemDisplay[scou]: %NAME% %ORANGE%*{%BLUE%M%WHITE%a%YELLOW%p %WHITE%+ %GOLD%Orb %WHITE%+ %ORANGE%Hel Rune%NL%%TAN%Note%WHITE%: Imbue %BLUE%Magic%WHITE%/%YELLOW%Rare %WHITE%Map to White:}
+ItemDisplay[upmp]: %NAME% %ORANGE%*{%WHITE%3x%BLUE%M%WHITE%a%YELLOW%p %TAN%(%WHITE%Tier:%ORANGE%x%TAN%) %WHITE%+ %GOLD%Orb %WHITE%= Map %TAN%(%WHITE%Tier:%ORANGE%x%WHITE%+1%TAN%)%NL%Note%WHITE%: Upgrade Maps for higher Tier:}
 //╔══════╗
 //║ Maps ║
 //╚══════╝
@@ -630,7 +630,7 @@ ItemDisplay[MAG !ID rin]://%BLUE%%NAME%%WHITE%[%ILVL%]
 ItemDisplay[MAG rin ID]:%NAME%%WHITE%[%ILVL%]%WHITE%{%YELLOW%Blood Ring:%ORANGE%Sol %WHITE%+ %RED%P Ruby %WHITE%+ %BLUE%Jewel%NL%%YELLOW%Caster Ring:%ORANGE%Amn %WHITE%+ %PURPLE%P Amethyst %WHITE%+ %BLUE%Jewel}
 //
 //Blue Jewels for crafting
-ItemDisplay[MAG !ID jew]:%BLUE%***%NL%%BLUE%o %ORANE%Jewel o%NL%%BLUE%***%MAP-97%%PX-62%
+ItemDisplay[MAG !ID jew]:%BLUE%***%NL%%BLUE%o %ORANGE%Jewel o%NL%%BLUE%***%MAP-97%%PX-62%
 //
 //Magic Diadems
 ItemDisplay[MAG ci3 !ETH !ID]://%BLUE%* %NAME% *%MAP-97%%PX-62%
