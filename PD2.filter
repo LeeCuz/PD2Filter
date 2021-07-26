@@ -33,8 +33,11 @@
 //║ Global Filters ║
 //╚════════════════╝
 //ED
-ItemDisplay[STAFF (SOCK=0 OR SOCK=4) NMAG !RW (SK57=3 AND SK48=3) %RED%>>>>>>>>>>>>>%GREEN%HOLY SHIT A STAFF%RED%<<<<<<<<<<< %CONTINUE%
-ItemDisplay[STAFF (SOCK=0 OR SOCK=4) NMAG !RW (SK57=3 OR SK48=3)%RED%>>>>%GREEN%%NAME%%BLUE%Nova or TStorm%RED%<<<<%CONTINUE%
+ItemDisplay[STAFF (SOCK=0 OR SOCK=4) NMAG !RW (SK57=3 AND SK48=3)]: %RED%>>>>>>>>>>>>>%GREEN%INFINITY STAFF%RED%<<<<<<<<<<<%BORDER-A5%%DOT-62%%CONTINUE%
+ItemDisplay[STAFF (SOCK=0 OR SOCK=4) NMAG !RW (SK57=3 OR SK48=3 OR SK44=3)]:%RED%>>>>%GREEN%%NAME%%PURPLE%FANCY INFINITY STAFF%RED%<<<<%BORDER-A5%%DOT-62%%CONTINUE%
+ItemDisplay[6ws (SOCK=0 OR SOCK=5) (ELT) NMAG !RW (SK44=3)]:&GREEN%PICK UP PICK UP PICK UP%RED%>>>>%PURPLE%Frost Nova Staff%RED%<<<<<&GREEN%PICK UP PICK UP PICK UP%BORDER-A5%%DOT-62%%CONTINUE%
+ItemDisplay[6ws (SOCK=0 OR SOCK=5) (ELT) NMAG !RW (SK44=2)]:&GREEN%PICK UP PICK UP PICK UP%RED%>>>>%PURPLE%+2 Frost Nova Staff%RED%&GREEN%PICK UP PICK UP PICK UP<<<<<%BORDER-A5%%DOT-62%%CONTINUE%
+ItemDisplay[(wst or 8ws) (SOCK=0 OR SOCK=5) NMAG !RW (SK44>2)]:%RED%>>>>%PURPLE%Frost Nova Staff%RED%<<<<<%CONTINUE%
 ItemDisplay[WEAPON NORM !RW NMAG (ED>0 AND ED<15) CLVL<80]:%WHITE%%NAME% %GREEN%ED%CONTINUE%
 ItemDisplay[WEAPON NORM !RW NMAG ED=15 CLVL<80]:%PURPLE%%NAME% %GREEN%15 ED%CONTINUE%
 ItemDisplay[WEAPON NORM !RW NMAG (ED>0 AND ED<15) CLVL>79]:
@@ -577,7 +580,7 @@ ItemDisplay[UNI !ID uts]:%RED%*%YELLOW%*%GREEN%*%BLUE%* %RED%o %PURPLE%Spirit Wa
 //╚══════╝
 //Jewelry
 ItemDisplay[SET !ID amu]:%GREEN%o Amulet o%DOT-84% 
-ItemDisplay[SET !ID rin]:%GREEN%o Ring o%DOT-84% 
+ItemDisplay[SET !ID rin]:
 //
 ItemDisplay[SET !ID uar]:%GREEN%* %PURPLE%o %GREEN%%NAME%%PURPLE% o %GREEN%*%DOT-84%%BORDER-4B%
 ItemDisplay[SET !ID xhb]:%GREEN%o IK Boots o%DOT-62%%BORDER-84%  
@@ -762,10 +765,10 @@ ItemDisplay[RW]:%GOLD%%NAME%%MAP-60%
 //////////
 //Charms//
 //////////
-ItemDisplay[MAG !ID cm1]:%WHITE%%BLUE%*** %BLUE%o %NAME%%GRAY%[%ILVL%]%BLUE% o %BLUE%***%WHITE%%MAP-97%%PX-62%
-ItemDisplay[MAG !ID cm2]:%WHITE%%BLUE%* %BLUE%o %NAME%%GRAY%[%ILVL%]%BLUE% o %BLUE%*%WHITE%%MAP-97%%PX-62%
-ItemDisplay[MAG !ID ILVL<91 cm3]:%WHITE%%BLUE%*** %BLUE%o %NAME%%GRAY%[%ILVL%]%BLUE% o %BLUE%***%WHITE%%MAP-97%%PX-62%
-ItemDisplay[MAG !ID ILVL>90 cm3]:%WHITE%%BLUE%*** %BLUE%o %ORANGE%Reroll %BLUE%%NAME%%ORANGE%[%ILVL%]%BLUE% o %BLUE%***%WHITE%%MAP-97%%PX-62%
+ItemDisplay[MAG !ID cm1]:%PURPLE%>>>>>%RED%Smol %ORANGE%Charm%PURPLE%<<<<<%BLUE%[%ILVL%]%MAP-97%%PX-62%
+ItemDisplay[MAG !ID cm2]:%PURPLE%>>>>>%RED%%NAME%%PURPLE%<<<<<%BLUE%[%ILVL%]%MAP-97%%PX-62%
+ItemDisplay[MAG !ID ILVL<91 cm3]:%PURPLE%>>>>>%RED%Not %GREEN%a %ORANGE%Skiller%PURPLE%<<<<<%BLUE%[%ILVL%]%MAP-97%%PX-62%
+ItemDisplay[MAG !ID ILVL>90 cm3]:%PURPLE%>>>>>%RED%Not %GREEN%a %ORANGE%Skiller%PURPLE%<<<<<%YELLOW%[%ILVL%]%MAP-97%%PX-62%
 //╔═══════╗
 //║ Rares ║
 //╚═══════╝
@@ -983,9 +986,9 @@ ItemDisplay[CL5 (SK273<0)]:%GRAY%Mind Blast Claw%GRAY%
 ItemDisplay[crs NMAG SOCK=4 CLVL<80]:%DARK_GREEN%%NAME%%MAP-97% 
 ItemDisplay[bsd NMAG SOCK=4 CLVL<80]:%DARK_GREEN%%NAME%%MAP-97% 
 ItemDisplay[lsd NMAG SOCK=4 CLVL<80]:%DARK_GREEN%%NAME%%MAP-97% 
-ItemDisplay[crs NMAG SOCK=0 (ILVL>25 AND ILVL<41) CLVL<80]:%DARK_GREEN%%NAME%%WHITE% 4 soc from larzuk
-ItemDisplay[bsd NMAG SOCK=0 (ILVL>25 AND ILVL<75) CLVL<80]:%DARK_GREEN%%NAME%%WHITE% 4 soc from larzuk
-ItemDisplay[lsd NMAG SOCK=0 (ILVL>25 AND ILVL<75) CLVL<80]:%DARK_GREEN%%NAME%%WHITE% 4 soc from larzuk
+ItemDisplay[crs NMAG SOCK=0 (ILVL>25 AND ILVL<41) CLVL<80]:%DARK_GREEN%%NAME%%WHITE%
+ItemDisplay[bsd NMAG SOCK=0 (ILVL>25 AND ILVL<75) CLVL<80]:%DARK_GREEN%%NAME%%WHITE%
+ItemDisplay[lsd NMAG SOCK=0 (ILVL>25 AND ILVL<75) CLVL<80]:%DARK_GREEN%%NAME%%WHITE%
 ItemDisplay[crs NMAG CLVL>79]:
 ItemDisplay[bsd NMAG CLVL>79]:
 ItemDisplay[lsd NMAG CLVL>79]:
