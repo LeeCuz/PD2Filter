@@ -33,13 +33,6 @@
 //║ Global Filters ║
 //╚════════════════╝
 //ED
-ItemDisplay[STAFF (SOCK=0 OR SOCK=4) NMAG !RW (SK57=3 AND SK48=3)]: %RED%>>>>>>>>>>>>>%GREEN%INFINITY STAFF%RED%<<<<<<<<<<<%BORDER-A5%%DOT-62%%CONTINUE%
-ItemDisplay[STAFF (SOCK=0 OR SOCK=4) NMAG !RW (SK57=3 OR SK48=3 OR SK44=3)]:%RED%>>>>%GREEN%%NAME%%PURPLE%FANCY INFINITY STAFF%RED%<<<<%BORDER-A5%%DOT-62%%CONTINUE%
-ItemDisplay[STAFF (SOCK=5) NMAG !RW ELT]:%GREEN%%NAME% %RED%5OS Elite Staff%CONTINUE%
-
-ItemDisplay[6ws (SOCK=0 OR SOCK=5) (ELT) NMAG !RW (SK44=3)]:&GREEN%PICK UP PICK UP PICK UP%RED%>>>>%PURPLE%Frost Nova Staff%RED%<<<<<&GREEN%PICK UP PICK UP PICK UP%BORDER-A5%%DOT-62%%CONTINUE%
-ItemDisplay[6ws (SOCK=0 OR SOCK=5) (ELT) NMAG !RW (SK44=2)]:&GREEN%PICK UP PICK UP PICK UP%RED%>>>>%PURPLE%+2 Frost Nova Staff%RED%&GREEN%PICK UP PICK UP PICK UP<<<<<%BORDER-A5%%DOT-62%%CONTINUE%
-ItemDisplay[(wst or 8ws) (SOCK=0 OR SOCK=5) NMAG !RW (SK44>2)]:%RED%>>>>%PURPLE%Frost Nova Staff%RED%<<<<<%CONTINUE%
 ItemDisplay[WEAPON NORM !RW NMAG (ED>0 AND ED<15) CLVL<80]:%WHITE%%NAME% %GREEN%ED%CONTINUE%
 ItemDisplay[WEAPON NORM !RW NMAG ED=15 CLVL<80]:%PURPLE%%NAME% %GREEN%15 ED%CONTINUE%
 ItemDisplay[WEAPON NORM !RW NMAG (ED>0 AND ED<15) CLVL>79]:
@@ -768,9 +761,9 @@ ItemDisplay[RW]:%GOLD%%NAME%%MAP-60%
 //Charms//
 //////////
 ItemDisplay[MAG !ID cm1]:%PURPLE%>>>>>%RED%Smol %ORANGE%Charm%PURPLE%<<<<<%BLUE%[%ILVL%]%MAP-97%%PX-62%
-ItemDisplay[MAG !ID cm2]:%PURPLE%>>>>>%RED%%NAME%%PURPLE%<<<<<%BLUE%[%ILVL%]%MAP-97%%PX-62%
-ItemDisplay[MAG !ID ILVL<91 cm3]:%PURPLE%>>>>>%RED%Not %GREEN%a %ORANGE%Skiller%PURPLE%<<<<<%BLUE%[%ILVL%]%MAP-97%%PX-62%
-ItemDisplay[MAG !ID ILVL>90 cm3]:%PURPLE%>%RED%Not %GREEN%a %BLUE%Skiller%PURPLE%<%YELLOW%[%ILVL%]%MAP-97%%PX-62%
+ItemDisplay[MAG !ID cm2]:%PURPLE%>>>>%BLUE%%NAME%%PURPLE%<<<<%BLUE%[%ILVL%]%MAP-97%%PX-62%
+ItemDisplay[MAG !ID ILVL<91 cm3]:%PURPLE%>%RED%Not %GREEN%a %BLUE%Skiller%PURPLE%<%BLUE%[%ILVL%]%MAP-97%%PX-62%
+ItemDisplay[MAG !ID ILVL>90 cm3]:%PURPLE%>%RED%Not %GREEN%a %ORANGE%Skiller%PURPLE%<%YELLOW%[%ILVL%]%MAP-97%%PX-62%
 //╔═══════╗
 //║ Rares ║
 //╚═══════╝
@@ -1117,8 +1110,13 @@ ItemDisplay[6ws NMAG ETH SOCK=4]:%GRAY%%NAME%
 //ETH Archon Staff, 6os ETH Archon Staff = BoTD = Breath of the Dying
 ItemDisplay[6ws NMAG ETH SOCK=0]:%GRAY%%NAME% 
 ItemDisplay[6ws NMAG ETH SOCK=6]:%GRAY%%NAME%
-//
+//Doom Staff
+ItemDisplay[6ws SOCK=0 NMAG !RW (SK44=3)]:&GREEN%PICK UP PICK UP PICK UP%RED%>>>>%PURPLE%Frost Nova %ORANGE%DOOM%PURPLE% Staff%RED%<<<<<&GREEN%PICK UP PICK UP PICK UP%BORDER-A5%%DOT-62%
+ItemDisplay[6ws SOCK=0 NMAG !RW (SK44=3)]:&GREEN%PICK UP PICK UP PICK UP%RED%>>>>%PURPLE%Frost Nova Staff%RED%<<<<<&GREEN%PICK UP PICK UP PICK UP%BORDER-A5%%DOT-62%
 //5OS Crystal Sword, War Scepter, Flail = CTA = Call to Arms, 5 OS Double Axe = Beast
+//Infinity
+ItemDisplay[STAFF SOCK=0 NMAG ELT !RW (SK48=3) !SUP]:%PURPLE%+3 Nova Infinity %ORANGE%Staff
+ItemDisplay[STAFF SOCK=4 NMAG ELT !RW (SK48=3) !SUP]:%RED%>>>>>>%PURPLE%+3 Nova Infinity %ORANGE%Staff%GREEN% 4OS%RED%<<<<<<%GREEN%5
 ItemDisplay[crs NMAG SOCK=5]:%GRAY%%NAME% %GRAY%
 ItemDisplay[wsp NMAG SOCK=5]:%GRAY%%NAME% %GRAY%
 ItemDisplay[fla NMAG SOCK=5]:%GRAY%%NAME% %GRAY%
@@ -1231,6 +1229,8 @@ ItemDisplay[amc SOCK=3 !SUP NMAG TABSK0=3]:%DARK_GREEN%+3 GMBow%MAP-97% %YELLOW%
 ItemDisplay[amb SOCK=3 !SUP NMAG TABSK0=3]:%DARK_GREEN%+3 MBow %GRAY%
 ItemDisplay[amb SOCK=0 !SUP NMAG TABSK0=3]:%DARK_GREEN%+3 Mbow %GRAY%
 ItemDisplay[amc SOCK=0 !SUP NMAG TABSK0=3]:%DARK_GREEN%+3 GMBow%MAP-97% %YELLOW%
+ItemDisplay[6wl SOCK=4 NMAG]:%RED%Hydra Bow%YELLOW% 4OS%MAP-97% %YELLOW%
+ItemDisplay[6wl SOCK=0 NMAG]:%RED%Hydra Bow%MAP-97% %YELLOW%
 ItemDisplay[amc NMAG SOCK=4]://%GRAY%GMBow
 ItemDisplay[amc !SUP NMAG SOCK=0]://%GRAY%GMBow
 ItemDisplay[NMAG 6hx SOCK=4]:%GRAY%%NAME%
@@ -1780,7 +1780,9 @@ ItemDisplay[NMAG !RW ILVL>14 swb]:
 ItemDisplay[NMAG !RW ILVL>14 8sw]:
 ItemDisplay[NMAG !RW ILVL>14 lwb]:
 ItemDisplay[NMAG !RW ILVL>14 8lw]:
-ItemDisplay[NMAG !RW ILVL>14 6lw]:
+ItemDisplay[NMAG !RW ILVL>14 6lw]:%RED%Hydra Bow
+ItemDisplay[NMAG SOC=4 !RW ILVL>14 6lw]:%RED%Hydra Bow %ORANGE%4OS
+ItemDisplay[NMAG SOC=4 SUP !RW ILVL>14 6lw]:%RED%Hydra Bow %ORANGE%4OS %PURPLE%SUPERIOR
 ItemDisplay[NMAG !RW ILVL>50 6sw]:
 //
 //Crossbow
