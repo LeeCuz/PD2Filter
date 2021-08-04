@@ -1,7 +1,7 @@
 //++++++++++++++++++++++++++
-//Ceef and Zodel's Tal Rash'a Filter Fork.
+//TalRasha's PD2 Item Filter Default Version
 //++++++++++++++++++++++++++
-//Updated August 1st 2021
+//Updated July 21, 2021
 //
 //╔═══════════════════╗
 //║ Table of Contents ║
@@ -1326,7 +1326,7 @@ ItemDisplay[CL2 NMAG (SK138>0) !SOCK=1 CLVL<21]:%GRAY%shout helm%GRAY%
 ItemDisplay[CL2 NMAG]:
 //
 //Scepters
-ItemDisplay[WP13 NMAG SOCK=4]://%GRAY%%NAME% %GRAY%
+ItemDisplay[WP13 NMAG SOCK=4]:%PURPLE%%NAME% %GRAY%
 ItemDisplay[WP13 NMAG SOCK=5 (SK117>0)]://%WHITE%Holy Shield cta base%WHITE%
 ItemDisplay[WP13 NMAG (SK121=3 AND SK123=3 AND SK117>0) !SOCK=1 !SOCK=2]:%NAME% %YELLOW%
 ItemDisplay[WP13 NMAG (SK121=3 AND SK123=3 AND SK124=3) !SOCK=1 !SOCK=2]:%NAME% %YELLOW%
